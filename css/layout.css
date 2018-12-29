@@ -1,0 +1,164 @@
+body {
+	background-color: rgb(100,100,100);
+	background-image: url('../img/sbg.gif');
+	background-attachment: fixed;
+	font-family: Arial, Helvetica, sans-serif;}
+
+section {
+	text-align: justify;
+	top: 3em;
+	background-color: rgb(200,200,200);
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(75,75,75);}
+
+section.main {
+	z-index: 1;
+	width: 95%;
+	position: relative;}
+
+
+table {
+    margin-left:2%;
+    margin-right:7%;
+	width: 91%;
+}
+
+button {
+    text-align: left;
+	width: 95%;
+}
+/* Alternating list background Styles */
+
+tr {
+    font-size: medium;
+    text-align: left;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:6px;
+	margin: 1px
+	line-height: 1em;
+}
+tr:nth-child(even) {
+	background-color: rgb(185,185,185);
+}
+tr:nth-child(odd) {
+	background-color: rgb(220,220,220);
+}
+
+label + input[type=checkbox] {
+	opacity:0.5;}
+
+label + input[type=checkbox]:checked {
+	opacity:1.0;}
+
+span {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 1.5em 1.5em;
+}
+
+span.alt {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png');
+}
+span.transmute {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.png');
+}
+span.alch {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeToRare.png');
+}
+span.chaos {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png');
+}
+span.aug {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToMagic.png');
+}
+span.chance {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeRandomly.png');
+}
+span.divine {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyModValues.png');
+}
+span.exalt {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png');
+}
+span.regal {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.png');
+}
+span.bauble {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyFlaskQuality.png');
+}
+span.vaal {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyVaal.png');
+}
+span.scrap {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyArmourQuality.png');
+}
+span.blessed {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyImplicitMod.png');
+}
+span.fuse {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketLinks.png');
+}
+span.jorb {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketNumbers.png');
+}
+span.chrom {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollSocketColours.png');
+}
+span.scour {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyConvertToNormal.png');
+}
+span.gcp {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyGemQuality.png');
+}
+span.whetstone {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyWeaponQuality.png');
+}
+
+span.om {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Weapons/OneHandWeapons/OneHandMaces/Mjolner.png');
+}
+span.or {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Weapons/OneHandWeapons/Wands/Wand4.png');
+}
+span.tm {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/Tidebreaker.png');
+}
+span.tr {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Weapons/TwoHandWeapons/Bows/Bow1.png');
+}
+span.am {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Amulets/Amulet1.png');
+}
+span.bd {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/BodyArmours/BodyStr1B.png');
+}
+span.be {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Belts/Belt1.png');
+}
+span.bo {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/Boots/Wanderlust.png');
+}
+span.gl {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/Gloves/Aurseize.png');
+}
+span.he {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/Helmets/HelmetDexInt5.png');
+}
+span.qu {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Quivers/Quiver1.png');
+}
+span.ri {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Rings/Ring1.png');
+}
+span.sh {
+    background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/Shields/Perandus.png');
+}

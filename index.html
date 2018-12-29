@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Path of Exile Crafting Recipe Tracker</title>
+    <script src="https://cdn.rawgit.com/brython-dev/brython/3.6.2/www/src/brython.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/brython-dev/brython/3.6.2/www/src/brython_stdlib.js" type="text/javascript"></script>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="brython(1)">
+<script type="text/python" src="recipes.py"></script>
+<section id="main" class="main">
+    This page requires javascript in order to work correctly.<br>
+    <br>
+
+    <script type="text/python">
+        from browser import document as doc
+        from browser import html
+        from browser.html import TABLE, TR, TH, TD
+        from recipes import mods
+
+        def togglemod(ev):
+            name = ev.target.name
+            if doc[name].style.display == "none":
+               doc[name].style.display = "inline"
+            else:
+              doc[name].style.display = "none"
+
+        def initializedata():
+            for affix in mods:
+                # Header
+                doc["main"] <= html.H1(affix) + html.BR()
+                for c, mod in enumerate(mods[affix]):
+                    name = "{}{}".format(affix, c)
+                    # Generate collapsable table
+                    b_generate = html.BUTTON(mod, name=name)
+                    b_generate.bind("click", togglemod)
+                    doc["main"] <= html.BR() + b_generate + html.BR()
+                    doc["main"] <= html.DIV(id=name)
+                    table = TABLE()
+                    seen = []
+                    for stat in mods[affix][mod]:
+                        # Preprocess then display
+                        num, label, cost, slot, loc = stat
+                        if num in seen:
+                            tr = table.rows.namedItem('tr{}{}'.format(name, num)).innerHTML.split("</td><td")
+                            tr[1] += '<br><br>{}'.format(label)
+                            tr[2] += '<br><br>{}'.format(cost)
+                            tr[3] += '<br><br>{}'.format(''.join(['<span class="{}"></span>'.format(x) for x in slot]))
+                            tr = "</td><td".join(tr)
+                            table.rows.namedItem('tr{}{}'.format(name, num)).innerHTML = tr
+                        else:
+                            seen.append(num)
+                            table <= TR(TD(num) + TD(label, id='label{}{}'.format(num, name)) + TD(cost) + TD([html.SPAN(Class=x) for x in slot], id='class{}{}'.format(num, name)) + TD(loc), id='tr{}{}'.format(name, num))
+                    doc[name] <= '    ' + table
+
+        initializedata()
+
+    </script>
+
+
+</section>
+</body>
+</html>
