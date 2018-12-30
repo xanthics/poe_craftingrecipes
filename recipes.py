@@ -1337,17 +1337,17 @@ mods = {
 				[
 					[1, 'Two Sockets', "1<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - First Node (Azurite Cavity)'],
 					[1, 'Three Sockets', "3<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - First Node (Azurite Cavity)'],
-					[1, 'Four Sockets', "10<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Vault'],
-					[1, 'Five Sockets', "70<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Fissure - 50+'],
-					[1, 'Six Sockets', "350<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal City - 81+'],
+					[2, 'Four Sockets', "10<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Vault'],
+					[3, 'Five Sockets', "70<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Fissure - 50+'],
+					[4, 'Six Sockets', "350<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal City - 81+'],
 				],
 			"Linked Sockets":
 				[
 					[1, 'Two Linked Sockets', '1<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Frozen Hollow - Howling Den'],
-					[1, 'Three Linked Sockets', '3<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Magma Fissure - Sweltering Burrow - 31+'],
-					[1, 'Four Linked Sockets', '5<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Fungal Caverns - Beast Burrow'],
-					[1, 'Five Linked Sockets', '150<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal Depths - Haunted Remains - 62+'],
-					[1, 'Six Linked Sockets', '1500<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Primeval Ruins'],
+					[2, 'Three Linked Sockets', '3<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Magma Fissure - Sweltering Burrow - 31+'],
+					[3, 'Four Linked Sockets', '5<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Fungal Caverns - Beast Burrow'],
+					[4, 'Five Linked Sockets', '150<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal Depths - Haunted Remains - 62+'],
+					[5, 'Six Linked Sockets', '1500<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Primeval Ruins'],
 				],
 			"At Least One x Socket":
 				[
