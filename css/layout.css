@@ -40,7 +40,7 @@ td.fixedcheck {
     width: 1em
 }
 td.fixedcost {
-    width:3em
+    width:5em
 }
 td.fixedclass {
     width: 11em
@@ -175,4 +175,7 @@ span.ri {
 }
 span.sh {
     background-image: url('https://web.poecdn.com/image/Art/2DItems/Armours/Shields/Perandus.png');
+}
+span.fl {
+    background-image: url('https://web.poecdn.com/gen/image/WzksNCx7ImYiOiJBcnRcLzJESXRlbXNcL0ZsYXNrc1wvQmxvY2tGbGFzayIsInNwIjowLjYwODUsImxldmVsIjowfV0/95d3526cf9/Item.png');
 }

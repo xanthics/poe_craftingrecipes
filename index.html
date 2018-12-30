@@ -11,8 +11,11 @@
 <body onload="brython(1)">
 <script type="text/python" src="recipes.py"></script>
 <section id="main" class="main">
-    This page requires javascript in order to work correctly.<br>
-    <br>
+    <div id="loading">
+        This page requires javascript in order to work correctly.
+        <br><br>
+        This page take a moment to load.
+    </div>
 
     <script type="text/python">
         from browser import document as doc
@@ -72,6 +75,7 @@
                                     , id='tr{}{}'.format(r, name)
                                     )
                     doc[name] <= table
+            doc["loading"].style.display = "none"
 
         def printmissing():
             for elt in doc.get(selector='input[type="checkbox"]'):
