@@ -24,19 +24,33 @@ section.main {
 
 
 table {
+    border: 1px solid black;
     margin-left:2%;
     margin-right:7%;
 	width: 91%;
 }
 
 button {
-    text-align: left;
-	width: 95%;
+    text-align: center;
+ 	width: 95%;
+    border: 1px solid #000000;
+    background-color: #a0a0a0;
+}
+td.fixedcheck {
+    width: 1em
+}
+td.fixedcost {
+    width:3em
+}
+td.fixedclass {
+    width: 11em
+}
+td.fixedloc {
+    width: 20em
 }
 /* Alternating list background Styles */
 
 tr {
-    font-size: medium;
     text-align: left;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
