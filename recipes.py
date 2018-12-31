@@ -919,17 +919,11 @@ mods = {
 				[
 					[1, '(6 - 8)% increased Trap Throwing Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  8 - The Solaris Temple Level 2'],
 					[2, '(9 - 12)% increased Trap Throwing Speed', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Atzoatl - Defense Research Lab'],
-					[3, '(7 - 8)% increased Trap Throwing Speed', '3<span class=\"aug\"></span>', ['am', 'be'], 'of the Veil'],
-					[4, '(9 - 10)% increased Trap Throwing Speed', '2<span class=\"alch\"></span>', ['am', 'be'], 'of the Veil'],
-					[5, '(11 - 12)% increased Trap Throwing Speed', '4<span class=\"chaos\"></span>', ['am', 'be'], 'of the Veil'],
 				],
 			"#% increased Mine Laying Speed":
 				[
 					[1, '(6 - 8)% increased Mine Laying Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  8 - The Solaris Temple Level 2'],
 					[2, '(9 - 12)% increased Mine Laying Speed', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Atzoatl - Defense Research Lab'],
-					[3, '(7 - 8)% increased Mine Laying Speed', '3<span class=\"aug\"></span>', ['am', 'he'], 'of the Veil'],
-					[4, '(9 - 10)% increased Mine Laying Speed', '2<span class=\"alch\"></span>', ['am', 'he'], 'of the Veil'],
-					[5, '(11 - 12)% increased Mine Laying Speed', '4<span class=\"chaos\"></span>', ['am', 'he'], 'of the Veil'],
 				],
 			"Minions have #% increased Attack Speed<br>Minions have #% increased Cast Speed":
 				[
@@ -1307,6 +1301,18 @@ mods = {
 					[1, '1% of Life Regenerated per second during any Flask Effect', "2<span class=\"bauble\"></span>", ['be'], 'of the Veil'],
 					[2, '1.5% of Life Regenerated per second during any Flask Effect', '4<span class=\"alch\"></span>', ['be'], 'of the Veil'],
 					[3, '2% of Life Regenerated per second during any Flask Effect', '4<span class=\"chaos\"></span>', ['be'], 'of the Veil'],
+				],
+			"#% increased Trap Throwing Speed - Veiled":
+				[
+					[1, '(7 - 8)% increased Trap Throwing Speed', '3<span class=\"aug\"></span>', ['am', 'be'], 'of the Veil'],
+					[2, '(9 - 10)% increased Trap Throwing Speed', '2<span class=\"alch\"></span>', ['am', 'be'], 'of the Veil'],
+					[3, '(11 - 12)% increased Trap Throwing Speed', '4<span class=\"chaos\"></span>', ['am', 'be'], 'of the Veil'],
+				],
+			"#% increased Mine Laying Speed - Veiled":
+				[
+					[1, '(7 - 8)% increased Mine Laying Speed', '3<span class=\"aug\"></span>', ['am', 'he'], 'of the Veil'],
+					[2, '(9 - 10)% increased Mine Laying Speed', '2<span class=\"alch\"></span>', ['am', 'he'], 'of the Veil'],
+					[3, '(11 - 12)% increased Mine Laying Speed', '4<span class=\"chaos\"></span>', ['am', 'he'], 'of the Veil'],
 				],
 			"#% increased Brand Attachment range":
 				[
