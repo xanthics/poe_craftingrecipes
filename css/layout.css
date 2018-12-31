@@ -65,10 +65,10 @@ tr:nth-child(odd) {
 	background-color: rgb(220,220,220);
 }
 
-label + input[type=checkbox] {
-	opacity:0.5;}
+tr.checked {
+	opacity:0.25;}
 
-label + input[type=checkbox]:checked {
+tr.unchecked {
 	opacity:1.0;}
 
 span {
