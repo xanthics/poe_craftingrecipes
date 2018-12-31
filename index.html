@@ -12,8 +12,7 @@
 <script type="text/python" src="recipes.py"></script>
 <script type="text/python" src="lookup.py"></script>
 <section id="state" class="float">
-    Updated Page URL <input type="text" id="querystring" onClick="this.select();" readonly> <div id="togglesummary" class="fr"></div><br>
-    Session state is not saved.<br>
+    <div id="togglesummary"></div><br>
     <div id="summary" class="showsummary" style="display: none;"></div>
 </section>
 <section id="main" class="main">
@@ -25,7 +24,7 @@
 
     <script type="text/python">
         from browser import document as doc
-        from browser import html
+        from browser import html, window
         from browser.html import TABLE, TR, TH, TD
         from recipes import mods
         from lookup import tobin, frombin
@@ -42,6 +41,8 @@
                 doc[ev.target.attrs['data-rowid']].attrs['class']='checked'
             else:
                 doc[ev.target.attrs['data-rowid']].attrs['class']='unchecked'
+            if doc['summary'].style.display == "block":
+                printmissing()
             createquerystring()
 
         def initializedata():
@@ -112,9 +113,9 @@
             buffer = ''
             for i in range(0, len(buf), 6):
                 buffer += frombin[''.join(buf[i:i+6])]
-            mystr = 'https://xanthics.github.io/poe_craftingrecipes/?pl={}'.format(buffer)
-            doc['querystring'].value = mystr
-            doc['querystring'].size = len(mystr)+1
+
+            query = "?pl={}".format(buffer)
+            window.history.replaceState('', '', query)
 
         def handlequerystring():
             try:

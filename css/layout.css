@@ -30,10 +30,6 @@ section.float {
 	width: 95%;
 }
 
-.fr {
-    float: right;
-}
-
 .showsummary {
     position: relative;
     height: 600px;
