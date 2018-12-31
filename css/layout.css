@@ -6,8 +6,8 @@ body {
 
 section {
 	text-align: justify;
-	top: 3em;
 	background-color: rgb(200,200,200);
+	top: 3em;
 	padding:10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -22,8 +22,31 @@ section.main {
 	width: 95%;
 	position: relative;}
 
+section.float {
+    position: fixed;
+    top: -1px;
+	z-index: 2;
+	left: 2%;
+	width: 95%;
+}
 
-table {
+.fr {
+    float: right;
+}
+
+.showsummary {
+    position: relative;
+    height: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+input {
+    font-family: monospace;
+}
+
+
+table.body {
     border: 1px solid black;
     margin-left:2%;
     margin-right:7%;

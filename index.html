@@ -10,6 +10,12 @@
 </head>
 <body onload="brython(1)">
 <script type="text/python" src="recipes.py"></script>
+<script type="text/python" src="lookup.py"></script>
+<section id="state" class="float">
+    Updated Page URL <input type="text" id="querystring" onClick="this.select();" readonly> <div id="togglesummary" class="fr"></div><br>
+    Session state is not saved.<br>
+    <div id="summary" class="showsummary"></div>
+</section>
 <section id="main" class="main">
     <div id="loading">
         This page requires javascript in order to work correctly.
@@ -22,19 +28,21 @@
         from browser import html
         from browser.html import TABLE, TR, TH, TD
         from recipes import mods
+        from lookup import tobin, frombin
 
         def togglemod(ev):
             name = ev.target.name
             if doc[name].style.display == "none":
-               doc[name].style.display = "inline"
+                doc[name].style.display = "inline"
             else:
-              doc[name].style.display = "none"
+                doc[name].style.display = "none"
 
         def togglerow(ev):
             if ev.target.checked:
                 doc[ev.target.attrs['data-rowid']].attrs['class']='checked'
             else:
                 doc[ev.target.attrs['data-rowid']].attrs['class']='unchecked'
+            createquerystring()
 
         def initializedata():
             for affix in mods:
@@ -47,7 +55,7 @@
                     b_generate.bind("click", togglemod)
                     doc["main"] <= b_generate + html.BR()
                     doc["main"] <= html.DIV(id=name)
-                    table = TABLE()
+                    table = TABLE(Class='body')
                     tabledata = {}
                     for stat in mods[affix][mod]:
                         # Preprocess then display
@@ -72,24 +80,147 @@
                                 if tslot:
                                     tslot += ','
                                 tslot += x
-                        table <= TR(
-                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
+                        if tr["loc"] == "Default":
+                            table <= TR(
+                                    #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
+                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], checked="true", data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
                                     TD(tr["label"], id='label{}{}'.format(r, name)) +
                                     TD(tr["cost"], Class='fixedcost') +
                                     TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id='class{}{}'.format(r, name), Class='fixedclass') +
                                     TD(tr["loc"], Class='fixedloc')
-                                    , id='tr{}{}'.format(r, name), Class="unchecked"
+                                    , id='tr{}{}'.format(r, name), Class="checked"
                                     )
+                        else:
+                            table <= TR(
+                                        #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
+                                        TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
+                                        TD(tr["label"], id='label{}{}'.format(r, name)) +
+                                        TD(tr["cost"], Class='fixedcost') +
+                                        TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id='class{}{}'.format(r, name), Class='fixedclass') +
+                                        TD(tr["loc"], Class='fixedloc')
+                                        , id='tr{}{}'.format(r, name), Class="unchecked"
+                                        )
                     doc[name] <= table
             doc["loading"].style.display = "none"
 
-        def printmissing():
-            return
-#            for elt in doc.get(selector='input[type="checkbox"]'):
-#                print(elt.attrs['data-loc'], elt.attrs['data-slot'])
+        def createquerystring():
+            buf = []
+            for elt in doc.get(selector='input[type="checkbox"]'):
+                buf.append('1' if elt.checked else '0')
+            if len(buf)%6:
+                buf += ['0'] * (6-len(buf)%6)
+            buffer = ''
+            for i in range(0, len(buf), 6):
+                buffer += frombin[''.join(buf[i:i+6])]
+            mystr = 'https://xanthics.github.io/poe_craftingrecipes/?pl={}'.format(buffer)
+            doc['querystring'].value = mystr
+            doc['querystring'].size = len(mystr)+1
 
+        def handlequerystring():
+            try:
+                val = doc.query['pl']
+                flagstr = ''.join([tobin[x] for x in val])
+                for idx, elt in enumerate(doc.get(selector='input[type="checkbox"]')):
+                    if flagstr[idx] == '1':
+                        elt.checked = True
+                        doc[elt.attrs['data-rowid']].attrs['class']='checked'
+            except KeyError:
+                print("No query string given")
+
+        def printmissing():
+            doc['summary'].clear()
+            missing = {'act': [], 'map': [], 'atzoatl': [], 'mine': [], 'prophecy': [], 'veil': {}, 'lab': []}
+            for elt in doc.get(selector='input[type="checkbox"]'):
+                if not elt.checked:
+                    loc = elt.attrs['data-loc']
+#                    name = elt.attrs['data-name']
+                    if 'Act' in loc or 'Epilogue' in loc:
+                        if loc not in missing['act']:
+                            missing['act'].append(loc)
+                    elif 'Tier' in loc:
+                        if loc not in missing['map']:
+                            missing['map'].append(loc)
+                    elif 'Atzoatl' in loc:
+                        if loc not in missing['atzoatl']:
+                            missing['atzoatl'].append(loc)
+                    elif 'Mines' in loc:
+                        if loc not in missing['mine']:
+                            missing['mine'].append(loc)
+                    elif 'Prophecy' in loc:
+                        if loc not in missing['prophecy']:
+                            missing['prophecy'].append(loc)
+                    elif 'Labyrinth' in loc:
+                        if loc not in missing['lab']:
+                            missing['lab'].append(loc)
+                    elif 'veil' in loc.lower():
+                        slot = elt.attrs['data-slot']
+                        if loc not in missing['veil']:
+                            missing['veil'][loc] = slot.split(',')
+                        else:
+                            for s in slot.split(','):
+                                if s not in missing['veil'][loc]:
+                                    missing['veil'][loc].append(s)
+                    else:
+                        print("Unknown location: {}".format(loc))
+
+
+            doc['summary'] <= html.STRONG("For performance reasons this section only updates when initially opened.") + html.BR() + html.BR()
+            for loc in sorted(missing):
+                table = TABLE()
+                if loc == 'act':
+                    table <= TH("Act Number")
+                    table <= TH("Zone Name")
+                    for a in sorted(missing[loc]):
+                        line = a.split(' - ')
+                        table <= TR(TD(line[0].strip('Act ')) + TD(line[1]))
+                elif loc == 'map':
+                    table <= TH("Map Name")
+                    table <= TH("Tier")
+                    for a in sorted(missing[loc]):
+                        line = a.split(' - ')
+                        table <= TR(TD(line[0]) + TD(line[1].strip("Tier ")))
+                elif loc == 'atzoatl':
+                    table <= TH("Atzoatl")
+                    for a in sorted(missing[loc]):
+                        line = a.split(' - ')
+                        table <= TR(TD(line[1]))
+                elif loc == 'mine':
+                    table <= TH("Mines")
+                    for a in sorted(missing[loc]):
+                        line = a.split(' - ')
+                        table <= TR(TD(line[1]))
+                elif loc == 'prophecy':
+                    table <= TH("Prophecy")
+                    for a in sorted(missing[loc]):
+                        line = a.split(' - ')
+                        table <= TR(TD(line[1]))
+                elif loc == 'lab':
+                    table <= TH("Labyrinth Tier")
+                    for a in sorted(missing[loc]):
+                        table <= TR(TD(a))
+                elif loc == 'veil':
+                    table <= TH("Veiled Mod")
+                    table <= TH("Slot(s)")
+                    for a in sorted(missing[loc]):
+                        table <= TR(TD(a) + TD([html.SPAN(Class=x) for x in missing[loc][a]]))
+
+                doc['summary'] <= table
+
+        def togglestate(ev):
+            if doc['summary'].style.display == "none":
+                printmissing()
+                doc['summary'].style.display = "block"
+            else:
+                doc['summary'].style.display = "none"
+
+        doc['summary'].style.display = "none"
         initializedata()
-        printmissing()
+        handlequerystring()
+        createquerystring()
+        b_generate = html.BUTTON("Toggle Summary")
+        b_generate.bind("click", togglestate)
+        doc["togglesummary"] <= b_generate
+
 
     </script>
 

@@ -4,15 +4,15 @@ mods = {
 			"+# to maximum Life":
 				[
 					[1, '+(15 - 25) to maximum Life', '1<span class=\"alt\"></span>', ['am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(26 - 40) to maximum Life', '6<span class=\"transmute\"></span>', ['am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Beacon'],
+					[2, '+(26 - 40) to maximum Life', '6<span class=\"transmute\"></span>', ['am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Beacon'],
 					[3, '+(41 - 55) to maximum Life', '2<span class=\"alch\"></span>', ['am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 10 - The Desecrated Chambers'],
 					[4, '+(56 - 70) to maximum Life', '4<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Port Map - Tier 5'],
 					[5, '+(71 - 85) to maximum Life', '4<span class=\"chaos\"></span>', ['bd'], 'Plateau Map - Tier 10'],
 				],
 			"#% increased Movement Speed":
 				[
-					[1, '(10 - 14)% increased Movement Speed', '3<span class=\"aug\"></span>', ['bo'], 'Act 2 - The Caverns'],
-					[2, '(15 - 19)% increased Movement Speed', '2<span class=\"chaos\"></span>', ['bo'], 'Act 5 - The Chamber of Innocence'],
+					[1, '(10 - 14)% increased Movement Speed', '3<span class=\"aug\"></span>', ['bo'], 'Act  2 - The Caverns'],
+					[2, '(15 - 19)% increased Movement Speed', '2<span class=\"chaos\"></span>', ['bo'], 'Act  5 - The Chamber of Innocence'],
 					[3, '(20 - 24)% increased Movement Speed', '4<span class=\"chaos\"></span>', ['bo'], 'Epilogue - Oriath'],
 				],
 			"#% of Physical Attack Damage Leeched as Life":
@@ -23,106 +23,106 @@ mods = {
 			"+# to maximum Mana":
 				[
 					[1, '+(25 - 34) to maximum Mana', '3<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(35 - 44) to maximum Mana', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], ' Act 6 - The Beacon'],
+					[2, '+(35 - 44) to maximum Mana', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Beacon'],
 					[3, '+(45 - 54) to maximum Mana', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 10 - The Desecrated Chambers'],
 				],
 			"#% increased Physical Damage":
 				[
-					[1, '(40 - 59)% increased Physical Damage', '4<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 3 - The Sewers'],
-					[2, '(60 - 79)% increased Physical Damage', '8<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 5 - The Ossuary'],
-					[3, '(80 - 99)% increased Physical Damage', '4<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 9 - The Quarry'],
+					[1, '(40 - 59)% increased Physical Damage', '4<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  3 - The Sewers'],
+					[2, '(60 - 79)% increased Physical Damage', '8<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  5 - The Ossuary'],
+					[3, '(80 - 99)% increased Physical Damage', '4<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  9 - The Quarry'],
 					[4, '(100 - 129)% increased Physical Damage', '1<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr'], 'Coral Ruins Map - Tier 10'],
 				],
 			"#% increased Spell Damage":
 				[
-					[1, '(37 - 51)% increased Spell Damage', '4<span class=\"alt\"></span>', ['tm'], 'Act 2 - The Ancient Pyramid'],
-					[2, '(52 - 66)% increased Spell Damage', '8<span class=\"alt\"></span>', ['tm'], "Act 6 - Shavronne's Tower (The Prison)"],
-					[3, '(67 - 81)% increased Spell Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Act 9 - The Boiling Lake'],
+					[1, '(37 - 51)% increased Spell Damage', '4<span class=\"alt\"></span>', ['tm'], 'Act  2 - The Ancient Pyramid'],
+					[2, '(52 - 66)% increased Spell Damage', '8<span class=\"alt\"></span>', ['tm'], "Act  6 - Shavronne's Tower (The Prison)"],
+					[3, '(67 - 81)% increased Spell Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Act  9 - The Boiling Lake'],
 					[4, '(82 - 99)% increased Spell Damage', '1<span class=\"exalt\"></span>', ['tm'], 'Siege Map - Tier 11'],
-					[1, '(25 - 34)% increased Spell Damage', '4<span class=\"alt\"></span>', ['om', 'or'], 'Act 2 - The Ancient Pyramid'],
-					[2, '(35 - 44)% increased Spell Damage', '8<span class=\"alt\"></span>', ['om', 'or'], "Act 6 - Shavronne's Tower (The Prison)"],
-					[3, '(45 - 54)% increased Spell Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Act 9 - The Boiling Lake'],
+					[1, '(25 - 34)% increased Spell Damage', '4<span class=\"alt\"></span>', ['om', 'or'], 'Act  2 - The Ancient Pyramid'],
+					[2, '(35 - 44)% increased Spell Damage', '8<span class=\"alt\"></span>', ['om', 'or'], "Act  6 - Shavronne's Tower (The Prison)"],
+					[3, '(45 - 54)% increased Spell Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Act  9 - The Boiling Lake'],
 					[4, '(55 - 66)% increased Spell Damage', '1<span class=\"exalt\"></span>', ['om', 'or'], 'Siege Map - Tier 11'],
 				],
 			"#% increased Damage over Time":
 				[
-					[1, '(11 - 20)% increased Damage over Time', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 7 - The Crypt'],
+					[1, '(11 - 20)% increased Damage over Time', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  7 - The Crypt'],
 					[2, '(21 - 30)% increased Damage over Time', '9<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Waterways Map - Tier 9'],
 				],
 			"#% increased Elemental Damage with Attack Skills":
 				[
-					[1, '(15 - 23)% increased Elemental Damage with Attack Skills', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'be', 'qu', 'ri'], 'Act 3 - The Catacombs'],
+					[1, '(15 - 23)% increased Elemental Damage with Attack Skills', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'be', 'qu', 'ri'], 'Act  3 - The Catacombs'],
 					[2, '(24 - 32)% increased Elemental Damage with Attack Skills', '4<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'be', 'qu'], 'Dunes Map - Tier 7'],
 				],
 			"#% increased Fire Damage":
 				[
-					[1, '(37 - 51)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Crematorium'],
-					[2, '(52 - 66)% increased Fire Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act 7 - The Dread Thicket'],
+					[1, '(37 - 51)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Crematorium'],
+					[2, '(52 - 66)% increased Fire Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act  7 - The Dread Thicket'],
 					[3, '(67 - 81)% increased Fire Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Arid Lake Map - Tier 2'],
-					[1, '(25 - 34)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Crematorium'],
-					[2, '(35 - 44)% increased Fire Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act 7 - The Dread Thicket'],
+					[1, '(25 - 34)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Crematorium'],
+					[2, '(35 - 44)% increased Fire Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act  7 - The Dread Thicket'],
 					[3, '(45 - 54)% increased Fire Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Arid Lake Map - Tier 2'],
 				],
 			"#% increased Cold Damage":
 				[
-					[1, '(37 - 51)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, '(52 - 66)% increased Cold Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act 7 - The Causeway'],
+					[1, '(37 - 51)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, '(52 - 66)% increased Cold Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act  7 - The Causeway'],
 					[3, '(67 - 81)% increased Cold Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Excavation Map - Tier 3'],
-					[1, '(25 - 34)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, '(35 - 44)% increased Cold Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act 7 - The Causeway'],
+					[1, '(25 - 34)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, '(35 - 44)% increased Cold Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act  7 - The Causeway'],
 					[3, '(45 - 54)% increased Cold Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Excavation Map - Tier 3'],
 				],
 			"#% increased Lightning Damage":
 				[
-					[1, '(37 - 51)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, '(52 - 66)% increased Lightning Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, '(37 - 51)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, '(52 - 66)% increased Lightning Damage', '6<span class=\"transmute\"></span>', ['tm'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, '(67 - 81)% increased Lightning Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Beach Map - Tier 4'],
-					[1, '(25 - 34)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, '(35 - 44)% increased Lightning Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, '(25 - 34)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, '(35 - 44)% increased Lightning Damage', '6<span class=\"transmute\"></span>', ['om', 'or'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, '(45 - 54)% increased Lightning Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Beach Map - Tier 4'],
 				],
 			"#% increased Chaos Damage":
 				[
-					[1, '(37 - 51)% increased Chaos Damage', '2<span class=\"chance\"></span>', ['tm'], 'Act 4 - The Belly of the Beast Level 2'],
+					[1, '(37 - 51)% increased Chaos Damage', '2<span class=\"chance\"></span>', ['tm'], 'Act  4 - The Belly of the Beast Level 2'],
 					[2, '(52 - 66)% increased Chaos Damage', '4<span class=\"chance\"></span>', ['tm'], 'Act 10 - The Ossuary'],
 					[3, '(67 - 81)% increased Chaos Damage', '2<span class=\"regal\"></span>', ['tm'], 'Atzoatl - Toxic Grove'],
-					[1, '(25 - 34)% increased Chaos Damage', '2<span class=\"chance\"></span>', ['om', 'or'], 'Act 4 - The Belly of the Beast Level 2'],
+					[1, '(25 - 34)% increased Chaos Damage', '2<span class=\"chance\"></span>', ['om', 'or'], 'Act  4 - The Belly of the Beast Level 2'],
 					[2, '(35 - 44)% increased Chaos Damage', '4<span class=\"chance\"></span>', ['om', 'or'], 'Act 10 - The Ossuary'],
 					[3, '(45 - 54)% increased Chaos Damage', '2<span class=\"regal\"></span>', ['om', 'or'], 'Atzoatl - Toxic Grove'],
 				],
 			"#% increased Armour":
 				[
-					[1, '(34 - 45)% increased Armour', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Armour', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Armour', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Armour', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"+# to Armour":
 				[
-					[1, '+(40 - 50) to Armour', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '+(40 - 50) to Armour', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '+(60 - 80) to Armour', '1<span class=\"alch\"></span>', ['bd', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '+(180 - 250) to Armour', '2<span class=\"chaos\"></span>', ['bd', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"#% increased Evasion Rating":
 				[
-					[1, '(34 - 45)% increased Evasion Rating', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Evasion Rating', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Evasion Rating', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Evasion Rating', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"+# to Evasion Rating":
 				[
-					[1, '+(40 - 50) to Evasion Rating', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '+(40 - 50) to Evasion Rating', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '+(60 - 80) to Evasion Rating', '1<span class=\"alch\"></span>', ['bd', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '+(180 - 250) to Evasion Rating', '2<span class=\"chaos\"></span>', ['bd', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"#% increased Energy Shield":
 				[
-					[1, '(34 - 45)% increased Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Energy Shield', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Energy Shield', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"+# to maximum Energy Shield":
 				[
-					[1, '+(27 - 34) to maximum Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '+(27 - 34) to maximum Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '+(35 - 45) to maximum Energy Shield', '1<span class=\"alch\"></span>', ['bd', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '+(56 - 69) to maximum Energy Shield', '2<span class=\"chaos\"></span>', ['bd', 'sh'], 'Laboratory Map - Tier 8'],
 				],
@@ -133,108 +133,108 @@ mods = {
 				],
 			"#% increased Armour and Evasion":
 				[
-					[1, '(34 - 45)% increased Armour and Evasion', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Armour and Evasion', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Armour and Evasion', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Armour and Evasion', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"#% increased Armour and Energy Shield":
 				[
-					[1, '(34 - 45)% increased Armour and Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Armour and Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Armour and Energy Shield', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Armour and Energy Shield', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"#% increased Evasion and Energy Shield":
 				[
-					[1, '(34 - 45)% increased Evasion and Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 6 - The Karui Fortress'],
+					[1, '(34 - 45)% increased Evasion and Energy Shield', '6<span class=\"alt\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act  6 - The Karui Fortress'],
 					[2, '(45 - 55)% increased Evasion and Energy Shield', '1<span class=\"alch\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Act 10 - The Feeding Trough'],
 					[3, '(56 - 74)% increased Evasion and Energy Shield', '2<span class=\"chaos\"></span>', ['bd', 'bo', 'gl', 'he', 'sh'], 'Laboratory Map - Tier 8'],
 				],
 			"Adds # to # Fire Damage":
 				[
-					[1, 'Adds (24 - 27) to (28 - 35) Fire Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Crematorium'],
-					[2, 'Adds (50 - 60) to (63 - 73) Fire Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Dread Thicket'],
+					[1, 'Adds (24 - 27) to (28 - 35) Fire Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Crematorium'],
+					[2, 'Adds (50 - 60) to (63 - 73) Fire Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Dread Thicket'],
 					[3, 'Adds (78 - 93) to (95 - 110) Fire Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Arid Lake Map - Tier 2'],
-					[1, 'Adds (16 - 18) to (19 - 23) Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act 3 - The Crematorium'],
-					[2, 'Adds (33 - 40) to (42 - 49) Fire Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act 7 - The Dread Thicket'],
+					[1, 'Adds (16 - 18) to (19 - 23) Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act  3 - The Crematorium'],
+					[2, 'Adds (33 - 40) to (42 - 49) Fire Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act  7 - The Dread Thicket'],
 					[3, 'Adds (52 - 62) to (63 - 73) Fire Damage', '4<span class=\"chaos\"></span>', ['om', 'or', 'tr'], 'Arid Lake Map - Tier 2'],
 				],
 			"Adds # to # Fire Damage to Attacks":
 				[
-					[1, 'Adds (8 - 11) to (16 - 20) Fire Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act 3 - The Crematorium'],
-					[2, 'Adds (12 - 17) to (26 - 30) Fire Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act 7 - The Dread Thicket'],
+					[1, 'Adds (8 - 11) to (16 - 20) Fire Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act  3 - The Crematorium'],
+					[2, 'Adds (12 - 17) to (26 - 30) Fire Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act  7 - The Dread Thicket'],
 				],
 			"Adds # to # Cold Damage":
 				[
-					[1, 'Adds (24 - 27) to (28 - 35) Cold Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, 'Adds (50 - 60) to (63 - 73) Cold Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Causeway'],
+					[1, 'Adds (24 - 27) to (28 - 35) Cold Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, 'Adds (50 - 60) to (63 - 73) Cold Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Causeway'],
 					[3, 'Adds (78 - 93) to (95 - 110) Cold Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Excavation Map - Tier 3'],
-					[1, 'Adds (16 - 18) to (19 - 23) Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, 'Adds (33 - 40) to (42 - 49) Cold Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act 7 - The Causeway'],
+					[1, 'Adds (16 - 18) to (19 - 23) Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, 'Adds (33 - 40) to (42 - 49) Cold Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act  7 - The Causeway'],
 					[3, 'Adds (52 - 62) to (63 - 73) Cold Damage', '4<span class=\"chaos\"></span>', ['om', 'or', 'tr'], 'Excavation Map - Tier 3'],
 				],
 			"Adds # to # Cold Damage to Attacks":
 				[
-					[1, 'Adds (6 - 8) to (14 - 18) Cold Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, 'Adds (11 - 15) to (23 - 27) Cold Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act 7 - The Causeway'],
+					[1, 'Adds (6 - 8) to (14 - 18) Cold Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, 'Adds (11 - 15) to (23 - 27) Cold Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act  7 - The Causeway'],
 				],
 			"Adds # to # Lightning Damage":
 				[
-					[1, 'Adds (2 - 4) to (40 - 55) Lightning Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, 'Adds (5 - 8) to (90 - 120) Lightning Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, 'Adds (2 - 4) to (40 - 55) Lightning Damage', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, 'Adds (5 - 8) to (90 - 120) Lightning Damage', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, 'Adds (9 - 12) to (150 - 185) Lightning Damage', '4<span class=\"chaos\"></span>', ['tm'], 'Beach Map - Tier 4'],
-					[1, 'Adds (1 - 3) to (27 - 37) Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, 'Adds (3 - 5) to (60 - 80) Lightning Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, 'Adds (1 - 3) to (27 - 37) Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tr'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, 'Adds (3 - 5) to (60 - 80) Lightning Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tr'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, 'Adds (6 - 8) to (100 - 123) Lightning Damage', '4<span class=\"chaos\"></span>', ['om', 'or', 'tr'], 'Beach Map - Tier 4'],
 				],
 			"Adds # to # Lightning Damage to Attacks":
 				[
-					[1, 'Adds (1 - 4) to (32 - 36) Lightning Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, 'Adds (1 - 5) to (41 - 48) Lightning Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, 'Adds (1 - 4) to (32 - 36) Lightning Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'ri'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, 'Adds (1 - 5) to (41 - 48) Lightning Damage to Attacks', '2<span class=\"alch\"></span>', ['am', 'ri'], 'Act  7 - The Chamber of Sins Level 1'],
 				],
 			"Adds # to # Physical Damage":
 				[
-					[1, 'Adds (9 - 12) to (18 - 21) Physical Damage', '4<span class=\"transmute\"></span>', ['tm', 'tr'], 'Act 3 - The Sewers'],
-					[2, 'Adds (11 - 15) to (23 - 27) Physical Damage', '2<span class=\"alch\"></span>', ['tm', 'tr'], 'Act 5 - The Ossuary'],
-					[3, 'Adds (18 - 24) to (36 - 42) Physical Damage', '4<span class=\"chaos\"></span>', ['tm', 'tr'], 'Act 9 - The Quarry'],
-					[1, 'Adds (6 - 8) to (13 - 15) Physical Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Sewers'],
-					[2, 'Adds (7 - 11) to (16 - 19) Physical Damage', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act 5 - The Ossuary'],
-					[3, 'Adds (13 - 17) to (26 - 30) Physical Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Act 9 - The Quarry'],
+					[1, 'Adds (9 - 12) to (18 - 21) Physical Damage', '4<span class=\"transmute\"></span>', ['tm', 'tr'], 'Act  3 - The Sewers'],
+					[2, 'Adds (11 - 15) to (23 - 27) Physical Damage', '2<span class=\"alch\"></span>', ['tm', 'tr'], 'Act  5 - The Ossuary'],
+					[3, 'Adds (18 - 24) to (36 - 42) Physical Damage', '4<span class=\"chaos\"></span>', ['tm', 'tr'], 'Act  9 - The Quarry'],
+					[1, 'Adds (6 - 8) to (13 - 15) Physical Damage', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Sewers'],
+					[2, 'Adds (7 - 11) to (16 - 19) Physical Damage', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act  5 - The Ossuary'],
+					[3, 'Adds (13 - 17) to (26 - 30) Physical Damage', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Act  9 - The Quarry'],
 				],
 			"Adds # to # Physical Damage to Attacks":
 				[
-					[1, 'Adds (3 - 5) to (6 - 8) Physical Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'gl', 'qu', 'ri'], 'Act 3 - The Sewers'],
-					[2, 'Adds (5 - 7) to (8 - 10) Physical Damage to Attacks', '2<span class=\"chaos\"></span>', ['am', 'ri'], 'Act 5 - The Ossuary'],
+					[1, 'Adds (3 - 5) to (6 - 8) Physical Damage to Attacks', '4<span class=\"transmute\"></span>', ['am', 'gl', 'qu', 'ri'], 'Act  3 - The Sewers'],
+					[2, 'Adds (5 - 7) to (8 - 10) Physical Damage to Attacks', '2<span class=\"chaos\"></span>', ['am', 'ri'], 'Act  5 - The Ossuary'],
 				],
 			"Adds # to # Chaos Damage to Attacks":
 				[
-					[1, 'Adds (6 - 8) to (14 - 18) Chaos Damage to Attacks', '6<span class=\"transmute\"></span>', ['am', 'gl', 'qu', 'ri'], 'Act 4 - The Belly of the Beast Level 2'],
+					[1, 'Adds (6 - 8) to (14 - 18) Chaos Damage to Attacks', '6<span class=\"transmute\"></span>', ['am', 'gl', 'qu', 'ri'], 'Act  4 - The Belly of the Beast Level 2'],
 					[2, 'Adds (11 - 15) to (23 - 27) Chaos Damage to Attacks', '2<span class=\"chaos\"></span>', ['am', 'ri'], 'Act 10 - The Ossuary'],
 				],
 			"Adds # to # Fire Damage to Spells":
 				[
-					[1, 'Adds (16 - 21) to (31 - 36) Fire Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Crematorium'],
-					[2, 'Adds (28 - 38) to (57 - 66) Fire Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Dread Thicket'],
+					[1, 'Adds (16 - 21) to (31 - 36) Fire Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Crematorium'],
+					[2, 'Adds (28 - 38) to (57 - 66) Fire Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Dread Thicket'],
 					[3, 'Adds (41 - 55) to (83 - 96) Fire Damage to Spells', '4<span class=\"chaos\"></span>', ['tm'], 'Arid Lake Map - Tier 2'],
-					[1, 'Adds (12 - 16) to (23 - 27) Fire Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Crematorium'],
-					[2, 'Adds (21 - 28) to (42 - 49) Fire Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act 7 - The Dread Thicket'],
+					[1, 'Adds (12 - 16) to (23 - 27) Fire Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Crematorium'],
+					[2, 'Adds (21 - 28) to (42 - 49) Fire Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act  7 - The Dread Thicket'],
 					[3, 'Adds (31 - 41) to (61 - 71) Fire Damage to Spells', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Arid Lake Map - Tier 2'],
 				],
 			"Adds # to # Cold Damage to Spells":
 				[
-					[1, 'Adds (14 - 19) to (28 - 33) Cold Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, 'Adds (26 - 34) to (52 - 60) Cold Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Causeway'],
+					[1, 'Adds (14 - 19) to (28 - 33) Cold Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, 'Adds (26 - 34) to (52 - 60) Cold Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Causeway'],
 					[3, 'Adds (38 - 50) to (75 - 88) Cold Damage to Spells', '4<span class=\"chaos\"></span>', ['tm'], 'Excavation Map - Tier 3'],
-					[1, 'Adds (10 - 13) to (19 - 22) Cold Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, 'Adds (17 - 23) to (34 - 40) Cold Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act 7 - The Causeway'],
+					[1, 'Adds (10 - 13) to (19 - 22) Cold Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, 'Adds (17 - 23) to (34 - 40) Cold Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act  7 - The Causeway'],
 					[3, 'Adds (25 - 33) to (50 - 58) Cold Damage to Spells', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Excavation Map - Tier 3'],
 				],
 			"Adds # to # Lightning Damage to Spells":
 				[
-					[1, 'Adds (1 - 5) to (59 - 63) Lightning Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, 'Adds (3 - 9) to (109 - 115) Lightning Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, 'Adds (1 - 5) to (59 - 63) Lightning Damage to Spells', '4<span class=\"transmute\"></span>', ['tm'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, 'Adds (3 - 9) to (109 - 115) Lightning Damage to Spells', '2<span class=\"alch\"></span>', ['tm'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, 'Adds (4 - 13) to (159 - 168) Lightning Damage to Spells', '4<span class=\"chaos\"></span>', ['tm'], 'Beach Map - Tier 4'],
-					[1, 'Adds (1 - 4) to (39 - 42) Lightning Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, 'Adds (2 - 6) to (73 - 77) Lightning Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, 'Adds (1 - 4) to (39 - 42) Lightning Damage to Spells', '4<span class=\"transmute\"></span>', ['om', 'or'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, 'Adds (2 - 6) to (73 - 77) Lightning Damage to Spells', '2<span class=\"alch\"></span>', ['om', 'or'], 'Act  7 - The Chamber of Sins Level 1'],
 					[3, 'Adds (3 - 9) to (106 - 112) Lightning Damage to Spells', '4<span class=\"chaos\"></span>', ['om', 'or'], 'Beach Map - Tier 4'],
 				],
 			"#% faster start of Energy Shield Recharge":
@@ -248,11 +248,11 @@ mods = {
 				],
 			"Minions deal #% increased Damage":
 				[
-					[1, 'Minions deal (10 - 20)% increased Damage', '3<span class=\"chaos\"></span>', ['gl'], 'Act 9 - The Lunaris Temple Level 2'],
-					[1, 'Minions deal (14 - 25)% increased Damage', '4<span class=\"aug\"></span>', ['tm', 'tr'], 'Act 9 - The Lunaris Temple Level 2'],
+					[1, 'Minions deal (10 - 20)% increased Damage', '3<span class=\"chaos\"></span>', ['gl'], 'Act  8 - The Lunaris Temple Level 2'],
+					[1, 'Minions deal (14 - 25)% increased Damage', '4<span class=\"aug\"></span>', ['tm', 'tr'], 'Act  8 - The Lunaris Temple Level 2'],
 					[2, 'Minions deal (26 - 38)% increased Damage', '2<span class=\"alch\"></span>', ['tm', 'tr'], 'Phantasmagoria Map - Tier 6'],
 					[3, 'Minions deal (39 - 50)% increased Damage', '3<span class=\"chaos\"></span>', ['tm', 'tr'], 'Atzoatl - Hybridisation Chamber'],
-					[1, 'Minions deal (9 - 16)% increased Damage', '4<span class=\"aug\"></span>', ['om', 'or'], 'Act 9 - The Lunaris Temple Level 2'],
+					[1, 'Minions deal (9 - 16)% increased Damage', '4<span class=\"aug\"></span>', ['om', 'or'], 'Act  8 - The Lunaris Temple Level 2'],
 					[2, 'Minions deal (17 - 25)% increased Damage', '2<span class=\"alch\"></span>', ['om', 'or'], 'Phantasmagoria Map - Tier 6'],
 					[3, 'Minions deal (26 - 33)% increased Damage', '3<span class=\"chaos\"></span>', ['om', 'or'], 'Atzoatl - Hybridisation Chamber'],
 				],
@@ -721,7 +721,7 @@ mods = {
 				],
 			"Suffixes Cannot Be Changed":
 				[
-					[1, 'Suffixes Cannot Be Changed', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'The Unbreathing Queen V'],
+					[1, 'Suffixes Cannot Be Changed', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Prophecy - The Unbreathing Queen V'],
 				],
 		},
 	"Suffix":
@@ -729,54 +729,54 @@ mods = {
 			"+#% to Fire Resistance":
 				[
 					[1, '+(16 - 20)% to Fire Resistance', '1<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 28)% to Fire Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Crystal Veins'],
-					[3, '+(29 - 35)% to Fire Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act 8 - Doedre's Cesspool"],
+					[2, '+(21 - 28)% to Fire Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Crystal Veins'],
+					[3, '+(29 - 35)% to Fire Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act  8 - Doedre's Cesspool"],
 				],
 			"+#% to Cold Resistance":
 				[
 					[1, '+(16 - 20)% to Cold Resistance', '1<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 28)% to Cold Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Crystal Veins'],
-					[3, '+(29 - 35)% to Cold Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act 8 - Doedre's Cesspool"],
+					[2, '+(21 - 28)% to Cold Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Crystal Veins'],
+					[3, '+(29 - 35)% to Cold Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act  8 - Doedre's Cesspool"],
 				],
 			"+#% to Lightning Resistance":
 				[
 					[1, '+(16 - 20)% to Lightning Resistance', '1<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 28)% to Lightning Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Crystal Veins'],
-					[3, '+(29 - 35)% to Lightning Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act 8 - Doedre's Cesspool"],
+					[2, '+(21 - 28)% to Lightning Resistance', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Crystal Veins'],
+					[3, '+(29 - 35)% to Lightning Resistance', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "Act  8 - Doedre's Cesspool"],
 				],
 			"+# to Strength":
 				[
 					[1, '+(15 - 20) to Strength', '1<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 25) to Strength', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Ascent'],
-					[3, '+(26 - 30) to Strength', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Western Forest'],
+					[2, '+(21 - 25) to Strength', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Ascent'],
+					[3, '+(26 - 30) to Strength', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Western Forest'],
 				],
 			"+# to Dexterity":
 				[
 					[1, '+(15 - 20) to Dexterity', '1<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 25) to Dexterity', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Ascent'],
-					[3, '+(26 - 30) to Dexterity', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Western Forest'],
+					[2, '+(21 - 25) to Dexterity', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Ascent'],
+					[3, '+(26 - 30) to Dexterity', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Western Forest'],
 				],
 			"+# to Intelligence":
 				[
 					[1, '+(15 - 20) to Intelligence', '1<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Default'],
-					[2, '+(21 - 25) to Intelligence', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 4 - The Ascent'],
-					[3, '+(26 - 30) to Intelligence', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Western Forest'],
+					[2, '+(21 - 25) to Intelligence', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  4 - The Ascent'],
+					[3, '+(26 - 30) to Intelligence', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Western Forest'],
 				],
 			"+#% to Fire and Cold Resistances":
 				[
-					[1, '+(10 - 12)% to Fire and Cold Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Lower Prison'],
+					[1, '+(10 - 12)% to Fire and Cold Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Lower Prison'],
 					[2, '+(13 - 16)% to Fire and Cold Resistances', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], "The Cruel Labyrinth"],
 					[3, '+(17 - 20)% to Fire and Cold Resistances', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "The Merciless Labyrinth"],
 				],
 			"+#% to Cold and Lightning Resistances":
 				[
-					[1, '+(10 - 12)% to Cold and Lightning Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Lower Prison'],
+					[1, '+(10 - 12)% to Cold and Lightning Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Lower Prison'],
 					[2, '+(13 - 16)% to Cold and Lightning Resistances', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], "The Cruel Labyrinth"],
 					[3, '+(17 - 20)% to Cold and Lightning Resistances', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "The Merciless Labyrinth"],
 				],
 			"+#% to Fire and Lightning Resistances":
 				[
-					[1, '+(10 - 12)% to Fire and Lightning Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 6 - The Lower Prison'],
+					[1, '+(10 - 12)% to Fire and Lightning Resistances', '6<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  6 - The Lower Prison'],
 					[2, '+(13 - 16)% to Fire and Lightning Resistances', '1<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], "The Cruel Labyrinth"],
 					[3, '+(17 - 20)% to Fire and Lightning Resistances', '3<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'sh'], "The Merciless Labyrinth"],
 				],
@@ -787,8 +787,8 @@ mods = {
 				],
 			"+# to all Attributes":
 				[
-					[1, '+(6 - 9) to all Attributes', '3<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 3 - The Imperial Gardens'],
-					[2, '+(10 - 13) to all Attributes', '6<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 9 - The Tunnel'],
+					[1, '+(6 - 9) to all Attributes', '3<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  3 - The Imperial Gardens'],
+					[2, '+(10 - 13) to all Attributes', '6<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  9 - The Tunnel'],
 				],
 			"#% of Physical Attack Damage Leeched as Life":
 				[
@@ -801,61 +801,61 @@ mods = {
 				],
 			"#% increased Mana Regeneration Rate":
 				[
-					[1, '(20 - 30)% increased Mana Regeneration Rate', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri', 'sh'], 'Act 7 - The Chamber of Sins Level 2'],
+					[1, '(20 - 30)% increased Mana Regeneration Rate', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri', 'sh'], 'Act  7 - The Chamber of Sins Level 2'],
 					[2, '(31 - 40)% increased Mana Regeneration Rate', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri', 'sh'], 'City Square Map - Tier 5'],
 				],
 			"#% increased Attack Speed":
 				[
-					[1, '(8 - 10)% increased Attack Speed', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 4 - The Dried Lake'],
-					[2, '(11 - 15)% increased Attack Speed', '2<span class=\"chaos\"></span>', ['om', 'tm'], 'Act 9 - The Vastiri Desert'],
+					[1, '(8 - 10)% increased Attack Speed', '6<span class=\"alt\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  4 - The Dried Lake'],
+					[2, '(11 - 15)% increased Attack Speed', '2<span class=\"chaos\"></span>', ['om', 'tm'], 'Act  9 - The Vastiri Desert'],
 					[3, '(16 - 20)% increased Attack Speed', '1<span class=\"exalt\"></span>', ['om', 'tm'], 'Dig Map - Tier 13'],
 					[3, '(11 - 13)% increased Attack Speed', '1<span class=\"exalt\"></span>', ['or', 'tr'], 'Dig Map - Tier 13'],
-					[1, '(7 - 12)% increased Attack Speed', '2<span class=\"chaos\"></span>', ['gl', 'qu'], 'Act 4 - The Dried Lake'],
-					[1, '(3 - 5)% increased Attack Speed', '2<span class=\"alch\"></span>', ['ri', 'sh'], 'Act 4 - The Dried Lake'],
+					[1, '(7 - 12)% increased Attack Speed', '2<span class=\"chaos\"></span>', ['gl', 'qu'], 'Act  4 - The Dried Lake'],
+					[1, '(3 - 5)% increased Attack Speed', '2<span class=\"alch\"></span>', ['ri', 'sh'], 'Act  4 - The Dried Lake'],
 				],
 			"#% increased Cast Speed":
 				[
-					[1, '(12 - 15)% increased Cast Speed', '6<span class=\"alt\"></span>', ['tm'], 'Act 4 - The Dried Lake'],
-					[2, '(16 - 20)% increased Cast Speed', '2<span class=\"chaos\"></span>', ['tm'], 'Act 9 - The Vastiri Desert'],
+					[1, '(12 - 15)% increased Cast Speed', '6<span class=\"alt\"></span>', ['tm'], 'Act  4 - The Dried Lake'],
+					[2, '(16 - 20)% increased Cast Speed', '2<span class=\"chaos\"></span>', ['tm'], 'Act  9 - The Vastiri Desert'],
 					[3, '(21 - 28)% increased Cast Speed', '1<span class=\"exalt\"></span>', ['tm'], 'Dig Map - Tier 13'],
-					[1, '(9 - 11)% increased Cast Speed', '6<span class=\"alt\"></span>', ['om', 'or'], 'Act 4 - The Dried Lake'],
-					[2, '(12 - 14)% increased Cast Speed', '2<span class=\"chaos\"></span>', ['om', 'or'], 'Act 9 - The Vastiri Desert'],
+					[1, '(9 - 11)% increased Cast Speed', '6<span class=\"alt\"></span>', ['om', 'or'], 'Act  4 - The Dried Lake'],
+					[2, '(12 - 14)% increased Cast Speed', '2<span class=\"chaos\"></span>', ['om', 'or'], 'Act  9 - The Vastiri Desert'],
 					[3, '(15 - 18)% increased Cast Speed', '1<span class=\"exalt\"></span>', ['om', 'or'], 'Dig Map - Tier 13'],
-					[1, '(6 - 8)% increased Cast Speed', '6<span class=\"alt\"></span>', ['am', 'sh'], 'Act 4 - The Dried Lake'],
+					[1, '(6 - 8)% increased Cast Speed', '6<span class=\"alt\"></span>', ['am', 'sh'], 'Act  4 - The Dried Lake'],
 				],
 			"#% increased Fire Damage":
 				[
-					[1, '(9 - 12)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 3 - The Crematorium'],
-					[2, '(13 - 16)% increased Fire Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 7 - The Dread Thicket'],
+					[1, '(9 - 12)% increased Fire Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  3 - The Crematorium'],
+					[2, '(13 - 16)% increased Fire Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  7 - The Dread Thicket'],
 				],
 			"#% increased Cold Damage":
 				[
-					[1, '(9 - 12)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 3 - The Solaris Temple Level 2'],
-					[2, '(13 - 16)% increased Cold Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 7 - The Causeway'],
+					[1, '(9 - 12)% increased Cold Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  3 - The Solaris Temple Level 2'],
+					[2, '(13 - 16)% increased Cold Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  7 - The Causeway'],
 				],
 			"#% increased Lightning Damage":
 				[
-					[1, '(9 - 12)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 3 - The Lunaris Temple Level 2'],
-					[2, '(13 - 16)% increased Lightning Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 7 - The Chamber of Sins Level 1'],
+					[1, '(9 - 12)% increased Lightning Damage', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  3 - The Lunaris Temple Level 2'],
+					[2, '(13 - 16)% increased Lightning Damage', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  7 - The Chamber of Sins Level 1'],
 				],
 			"#% increased Chaos Damage":
 				[
-					[1, '(9 - 12)% increased Chaos Damage', '3<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 4 - The Belly of the Beast Level 2'],
+					[1, '(9 - 12)% increased Chaos Damage', '3<span class=\"chance\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act  4 - The Belly of the Beast Level 2'],
 					[2, '(13 - 16)% increased Chaos Damage', '3<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'ri'], 'Act 10 - The Ossuary'],
 				],
 			"+# to Accuracy Rating":
 				[
-					[1, '+(91 - 120) to Accuracy Rating', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 5 - The Reliquary'],
-					[2, '+(121 - 200) to Accuracy Rating', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 7 - The Temple of Decay Level 2'],
+					[1, '+(91 - 120) to Accuracy Rating', '4<span class=\"transmute\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  5 - The Reliquary'],
+					[2, '+(121 - 200) to Accuracy Rating', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  7 - The Temple of Decay Level 2'],
 					[3, '+(201 - 300) to Accuracy Rating', '2<span class=\"chaos\"></span>', ['om', 'or', 'tm', 'tr'], 'Atzoatl - Hall of Champions'],
-					[1, '+(91 - 120) to Accuracy Rating', '4<span class=\"transmute\"></span>', ['am', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 5 - The Reliquary'],
-					[2, '+(121 - 150) to Accuracy Rating', '2<span class=\"alch\"></span>', ['am', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act 7 - The Temple of Decay Level 2'],
+					[1, '+(91 - 120) to Accuracy Rating', '4<span class=\"transmute\"></span>', ['am', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  5 - The Reliquary'],
+					[2, '+(121 - 150) to Accuracy Rating', '2<span class=\"alch\"></span>', ['am', 'gl', 'he', 'qu', 'ri', 'sh'], 'Act  7 - The Temple of Decay Level 2'],
 					[3, '+(151 - 220) to Accuracy Rating', '2<span class=\"chaos\"></span>', ['am', 'gl', 'he', 'qu', 'ri', 'sh'], 'Atzoatl - Hall of Champions'],
 				],
 			"#% increased Global Physical Damage":
 				[
-					[1, '(9 - 12)% increased Global Physical Damage', '3<span class=\"chance\"></span>', ['am', 'sh'], 'Act 3 - The Sewers'],
-					[2, '(13 - 16)% increased Global Physical Damage', '3<span class=\"alch\"></span>', ['am', 'sh'], 'Act 5 - The Ossuary'],
+					[1, '(9 - 12)% increased Global Physical Damage', '3<span class=\"chance\"></span>', ['am', 'sh'], 'Act  3 - The Sewers'],
+					[2, '(13 - 16)% increased Global Physical Damage', '3<span class=\"alch\"></span>', ['am', 'sh'], 'Act  5 - The Ossuary'],
 				],
 			"#% increased Critical Strike Chance":
 				[
@@ -883,7 +883,7 @@ mods = {
 				],
 			"#% increased Flask effect duration":
 				[
-					[1, '(5 - 10)% increased Flask effect duration', "2<span class=\"bauble\"></span>", ['be'], 'Act 8 - The Bath House'],
+					[1, '(5 - 10)% increased Flask effect duration', "2<span class=\"bauble\"></span>", ['be'], 'Act  8 - The Bath House'],
 					[2, '(11 - 15)% increased Flask effect duration', "4<span class=\"bauble\"></span>", ['be'], 'Castle Ruins Map - Tier 12'],
 				],
 			"#% chance to Avoid being Stunned":
@@ -912,12 +912,12 @@ mods = {
 				],
 			"Minions have #% increased maximum Life":
 				[
-					[1, 'Minions have (11 - 15)% increased maximum Life', '4<span class=\"aug\"></span>', ['he'], 'Act 9 - The Lunaris Temple Level 2'],
+					[1, 'Minions have (11 - 15)% increased maximum Life', '4<span class=\"aug\"></span>', ['he'], 'Act  8 - The Lunaris Temple Level 2'],
 					[2, 'Minions have (16 - 20)% increased maximum Life', '2<span class=\"alch\"></span>', ['he'], 'Phantasmagoria Map - Tier 6'],
 				],
 			"#% increased Trap Throwing Speed":
 				[
-					[1, '(6 - 8)% increased Trap Throwing Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 8 - The Solaris Temple Level 2'],
+					[1, '(6 - 8)% increased Trap Throwing Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  8 - The Solaris Temple Level 2'],
 					[2, '(9 - 12)% increased Trap Throwing Speed', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Atzoatl - Defense Research Lab'],
 					[3, '(7 - 8)% increased Trap Throwing Speed', '3<span class=\"aug\"></span>', ['am', 'be'], 'of the Veil'],
 					[4, '(9 - 10)% increased Trap Throwing Speed', '2<span class=\"alch\"></span>', ['am', 'be'], 'of the Veil'],
@@ -925,7 +925,7 @@ mods = {
 				],
 			"#% increased Mine Laying Speed":
 				[
-					[1, '(6 - 8)% increased Mine Laying Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act 8 - The Solaris Temple Level 2'],
+					[1, '(6 - 8)% increased Mine Laying Speed', '6<span class=\"aug\"></span>', ['om', 'or', 'tm', 'tr'], 'Act  8 - The Solaris Temple Level 2'],
 					[2, '(9 - 12)% increased Mine Laying Speed', '2<span class=\"alch\"></span>', ['om', 'or', 'tm', 'tr'], 'Atzoatl - Defense Research Lab'],
 					[3, '(7 - 8)% increased Mine Laying Speed', '3<span class=\"aug\"></span>', ['am', 'he'], 'of the Veil'],
 					[4, '(9 - 10)% increased Mine Laying Speed', '2<span class=\"alch\"></span>', ['am', 'he'], 'of the Veil'],
@@ -1316,19 +1316,19 @@ mods = {
 				],
 			"Prefixes Cannot Be Changed":
 				[
-					[1, 'Prefixes Cannot Be Changed', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Unbearable Whispers V'],
+					[1, 'Prefixes Cannot Be Changed', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Prophecy - Unbearable Whispers V'],
 				],
 			"Can have multiple Crafted Modifiers":
 				[
-					[1, 'Can have multiple Crafted Modifiers', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'The Pale Court'],
+					[1, 'Can have multiple Crafted Modifiers', '2<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Prophecy - The Pale Court'],
 				],
 			"Cannot roll Attack Modifiers":
 				[
-					[1, 'Cannot roll Attack Modifiers', '1<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'The Plaguemaw V'],
+					[1, 'Cannot roll Attack Modifiers', '1<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Prophecy - The Plaguemaw V'],
 				],
 			"Cannot roll Caster Modifiers":
 				[
-					[1, 'Cannot roll Caster Modifiers', '5<span class=\"blessed\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'The Feral Lord V'],
+					[1, 'Cannot roll Caster Modifiers', '5<span class=\"blessed\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'be', 'bo', 'gl', 'he', 'qu', 'ri', 'sh'], 'Prophecy - The Feral Lord V'],
 				],
 		},
 	"Other":
@@ -1337,50 +1337,50 @@ mods = {
 				[
 					[1, 'Two Sockets', "1<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - First Node (Azurite Cavity)'],
 					[1, 'Three Sockets', "3<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - First Node (Azurite Cavity)'],
-					[2, 'Four Sockets', "10<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Vault'],
-					[3, 'Five Sockets', "70<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Fissure - 50+'],
-					[4, 'Six Sockets', "350<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal City - 81+'],
+					[2, 'Four Sockets', "10<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Vault'],
+					[3, 'Five Sockets', "70<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Fissure'],
+					[4, 'Six Sockets', "350<span class=\"jorb\"></span>", ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Abyssal City'],
 				],
 			"Linked Sockets":
 				[
-					[1, 'Two Linked Sockets', '1<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Frozen Hollow - Howling Den'],
-					[2, 'Three Linked Sockets', '3<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Magma Fissure - Sweltering Burrow - 31+'],
-					[3, 'Four Linked Sockets', '5<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Fungal Caverns - Beast Burrow'],
-					[4, 'Five Linked Sockets', '150<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Abyssal Depths - Haunted Remains - 62+'],
-					[5, 'Six Linked Sockets', '1500<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Primeval Ruins'],
+					[1, 'Two Linked Sockets', '1<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Frozen Hollow - Howling Den'],
+					[2, 'Three Linked Sockets', '3<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Magma Fissure - Sweltering Burrow'],
+					[3, 'Four Linked Sockets', '5<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Fungal Caverns - Beast Burrow'],
+					[4, 'Five Linked Sockets', '150<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Abyssal Depths - Haunted Remains'],
+					[5, 'Six Linked Sockets', '1500<span class=\"fuse\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Primeval Ruins'],
 				],
 			"At Least One x Socket":
 				[
-					[1, 'At Least One Red Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least One Green Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least One Blue Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Any Biome - Azurite Cavity'],
+					[1, 'At Least One Red Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least One Green Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least One Blue Socket', '4<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'am', 'bd', 'bo', 'gl', 'he', 'ri', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
 				],
 			"At Least Two x Sockets":
 				[
-					[1, 'At Least Two Red Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least Two Green Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least Two Blue Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
+					[1, 'At Least Two Red Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least Two Green Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least Two Blue Sockets', '25<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
 				],
 			"At Least Three x Sockets":
 				[
-					[1, 'At Least Three Red Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Three Green Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Three Blue Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
+					[1, 'At Least Three Red Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Three Green Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Three Blue Sockets', '120<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
 				],
 			"At Least One x and One y Socket":
 				[
-					[1, 'At Least One Red and One Green Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least One Red and One Blue Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
-					[1, 'At Least One Green and One Blue Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Any Biome - Azurite Cavity'],
+					[1, 'At Least One Red and One Green Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least One Red and One Blue Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
+					[1, 'At Least One Green and One Blue Socket', '15<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Any Biome - Azurite Cavity'],
 				],
 			"At Least Two x and One y Socket":
 				[
-					[1, 'At Least Two Red and One Green Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Two Red and One Blue Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Two Green and One Red Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Two Green and One Blue Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Two Blue and One Green Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
-					[1, 'At Least Two Blue and One Red Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Vaal Outpost'],
+					[1, 'At Least Two Red and One Green Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Two Red and One Blue Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Two Green and One Red Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Two Green and One Blue Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Two Blue and One Green Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
+					[1, 'At Least Two Blue and One Red Socket', '100<span class=\"chrom\"></span>', ['om', 'or', 'tm', 'tr', 'bd', 'bo', 'gl', 'he', 'sh'], 'Mines - Vaal Outpost'],
 				],
 			"Remove Crafted Mods":
 				[
