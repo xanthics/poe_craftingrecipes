@@ -179,28 +179,28 @@
                         table <= TH("Act Number")
                         table <= TH("Zone Name")
                         for a in sorted(missing[loc]):
-                            line = a.split(' - ')
+                            line = a.split(' - ', 1)
                             table <= TR(TD(line[0].strip('Act ')) + TD(line[1]))
                     elif loc == 'map':
                         table <= TH("Map Name")
                         table <= TH("Tier")
                         for a in sorted(missing[loc]):
-                            line = a.split(' - ')
+                            line = a.split(' - ', 1)
                             table <= TR(TD(line[0]) + TD(line[1].strip("Tier ")))
                     elif loc == 'atzoatl':
                         table <= TH("Atzoatl")
                         for a in sorted(missing[loc]):
-                            line = a.split(' - ')
+                            line = a.split(' - ', 1)
                             table <= TR(TD(line[1]))
                     elif loc == 'mine':
                         table <= TH("Mines")
                         for a in sorted(missing[loc]):
-                            line = a.split(' - ')
+                            line = a.split(' - ', 1)
                             table <= TR(TD(line[1]))
                     elif loc == 'prophecy':
                         table <= TH("Prophecy")
                         for a in sorted(missing[loc]):
-                            line = a.split(' - ')
+                            line = a.split(' - ', 1)
                             table <= TR(TD(line[1]))
                     elif loc == 'lab':
                         table <= TH("Labyrinth Tier")
