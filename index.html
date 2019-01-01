@@ -37,10 +37,16 @@
                 doc[name].style.display = "none"
 
         def togglerow(ev):
-            if ev.target.checked:
-                doc[ev.target.attrs['data-rowid']].attrs['class']='checked'
+            binstate = ev.target.checked
+            newstate = 'checked' if binstate else 'unchecked'
+
+            if 'veil' in ev.target.attrs['data-loc'].lower():
+                doc[ev.target.attrs['data-rowid']].attrs['class']=newstate
             else:
-                doc[ev.target.attrs['data-rowid']].attrs['class']='unchecked'
+                for elt in doc.get(selector='input[data-loc="{}"]'.format(ev.target.attrs['data-loc'])):
+                    elt.checked = binstate
+                    doc[elt.attrs['data-rowid']].attrs['class']=newstate
+
             if doc['summary'].style.display == "block":
                 printmissing()
             createquerystring()
