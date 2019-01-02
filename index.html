@@ -171,7 +171,7 @@
                         print("Unknown location: {}".format(loc))
 
 
-            doc['summary'] <= html.STRONG("For performance reasons this section only updates when initially opened.") + html.BR() + html.BR()
+            doc['summary'] <= html.STRONG("The following is a list of locations that have missing recipes.") + html.BR() + html.BR()
             for loc in sorted(missing):
                 if missing[loc]:
                     table = TABLE()
