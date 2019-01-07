@@ -649,10 +649,10 @@ mods = {
 				],
 			"#% increased Damage during any Flask Effect":
 				[
-					[1, '(12 - 15)% increased Damage during any Flask Effect', "3<span class=\"bauble\"></span>", ['gl'], "Gravicius' Veiled"],
-					[2, '(16 - 18)% increased Damage during any Flask Effect', "6<span class=\"bauble\"></span>", ['gl'], "Gravicius' Veiled"],
-					[3, '(19 - 23)% increased Damage during any Flask Effect', '2<span class=\"alch\"></span>', ['gl'], "Gravicius' Veiled"],
-					[4, '(24 - 28)% increased Damage during any Flask Effect', '4<span class=\"chaos\"></span>', ['gl'], "Gravicius' Veiled"],
+					[1, '(12 - 15)% increased Damage during any Flask Effect', "3<span class=\"bauble\"></span>", ['gl'], "Guff's Veiled"],
+					[2, '(16 - 18)% increased Damage during any Flask Effect', "6<span class=\"bauble\"></span>", ['gl'], "Guff's Veiled"],
+					[3, '(19 - 23)% increased Damage during any Flask Effect', '2<span class=\"alch\"></span>', ['gl'], "Guff's Veiled"],
+					[4, '(24 - 28)% increased Damage during any Flask Effect', '4<span class=\"chaos\"></span>', ['gl'], "Guff's Veiled"],
 				],
 			"Gain #% of Non-Chaos Damage as extra Chaos Damage":
 				[
