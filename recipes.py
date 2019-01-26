@@ -611,7 +611,7 @@ mods = {
 					[1, '+1 to Level of Socketed Support Gems', '1<span class=\"divine\"></span>', ['om', 'or', 'tm', 'tr', 'sh'], "Catarina's Veiled"],
 					[2, '+2 to Level of Socketed Support Gems', '1<span class=\"exalt\"></span>', ['om', 'or', 'tm', 'tr', 'sh'], "Catarina's Veiled"],
 				],
-			"(-# - -#) to Total Mana Cost of Skills":
+			"-# to Total Mana Cost of Skills":
 				[
 					[1, '(-3 - -2) to Total Mana Cost of Skills', '2<span class=\"chance\"></span>', ['am', 'ri'], "Elreon's Veiled"],
 					[2, '(-5 - -4) to Total Mana Cost of Skills', '2<span class=\"alch\"></span>', ['am', 'ri'], "Elreon's Veiled"],
@@ -968,15 +968,15 @@ mods = {
 				],
 			"+# to Minimum Endurance Charges":
 				[
-					[1, '+1 to Minimum Endurance Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil'],
+					[1, '+1 to Minimum Endurance Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil, Item Level 75+'],
 				],
 			"+# to Minimum Power Charges":
 				[
-					[1, '+1 to Minimum Power Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil'],
+					[1, '+1 to Minimum Power Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil, Item Level 75+'],
 				],
 			"+# to Minimum Frenzy Charges":
 				[
-					[1, '+1 to Minimum Frenzy Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil'],
+					[1, '+1 to Minimum Frenzy Charges', '1<span class=\"exalt\"></span>', ['am', 'ri'], 'of the Veil, Item Level 75+'],
 				],
 			"#% increased Attack and Cast Speed":
 				[

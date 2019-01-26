@@ -24,32 +24,10 @@
 
     <script type="text/python">
         from browser import document as doc
-        from browser import html, window
+        from browser import html, window, bind
         from browser.html import TABLE, TR, TH, TD
         from recipes import mods
         from lookup import tobin, frombin
-
-        def togglemod(ev):
-            name = ev.target.name
-            if doc[name].style.display == "none":
-                doc[name].style.display = "inline"
-            else:
-                doc[name].style.display = "none"
-
-        def togglerow(ev):
-            binstate = ev.target.checked
-            newstate = 'checked' if binstate else 'unchecked'
-
-            if 'veil' in ev.target.attrs['data-loc'].lower():
-                doc[ev.target.attrs['data-rowid']].attrs['class']=newstate
-            else:
-                for elt in doc.get(selector='input[data-loc="{}"]'.format(ev.target.attrs['data-loc'])):
-                    elt.checked = binstate
-                    doc[elt.attrs['data-rowid']].attrs['class']=newstate
-
-            if doc['summary'].style.display == "block":
-                printmissing()
-            createquerystring()
 
         def initializedata():
             for affix in mods:
@@ -59,7 +37,6 @@
                     name = "{}{}".format(affix, c)
                     # Generate collapsable table
                     b_generate = html.BUTTON(mod, name=name)
-                    b_generate.bind("click", togglemod)
                     doc["main"] <= b_generate + html.BR()
                     doc["main"] <= html.DIV(id=name)
                     table = TABLE(Class='body')
@@ -87,28 +64,45 @@
                                 if tslot:
                                     tslot += ','
                                 tslot += x
-                        if tr["loc"] == "Default":
-                            table <= TR(
-                                    #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
-                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], checked="true", data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
+                        table <= TR(
+                                    #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)), Class='fixedcheck') +
+                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)), Class='fixedcheck') +
                                     TD(tr["label"], id='label{}{}'.format(r, name)) +
                                     TD(tr["cost"], Class='fixedcost') +
                                     TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id='class{}{}'.format(r, name), Class='fixedclass') +
                                     TD(tr["loc"], Class='fixedloc')
-                                    , id='tr{}{}'.format(r, name), Class="checked"
+                                    , id='tr{}{}'.format(r, name), Class="unchecked"
                                     )
-                        else:
-                            table <= TR(
-                                        #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
-                                        TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)).bind('click', togglerow), Class='fixedcheck') +
-                                        TD(tr["label"], id='label{}{}'.format(r, name)) +
-                                        TD(tr["cost"], Class='fixedcost') +
-                                        TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id='class{}{}'.format(r, name), Class='fixedclass') +
-                                        TD(tr["loc"], Class='fixedloc')
-                                        , id='tr{}{}'.format(r, name), Class="unchecked"
-                                        )
                     doc[name] <= table
-            doc["loading"].style.display = "none"
+                    for elt in doc.get(selector='input[data-loc="Default"]'):
+                        elt.checked = True
+                        doc[elt.attrs['data-rowid']].attrs['class'] = 'checked'
+                    doc["loading"].style.display = "none"
+        initializedata()
+
+        @bind('button[name]' ,'click')
+        def togglemod(ev):
+            name = ev.target.name
+            if doc[name].style.display == "none":
+                doc[name].style.display = "inline"
+            else:
+                doc[name].style.display = "none"
+
+        @bind('input[type=checkbox]' ,'click')
+        def togglerow(ev):
+            binstate = ev.target.checked
+            newstate = 'checked' if binstate else 'unchecked'
+
+            if 'veil' in ev.target.attrs['data-loc'].lower():
+                doc[ev.target.attrs['data-rowid']].attrs['class']=newstate
+            else:
+                for elt in doc.get(selector='input[data-loc="{}"]'.format(ev.target.attrs['data-loc'])):
+                    elt.checked = binstate
+                    doc[elt.attrs['data-rowid']].attrs['class']=newstate
+
+            if doc['summary'].style.display == "block":
+                printmissing()
+            createquerystring()
 
         def createquerystring():
             buf = []
@@ -222,7 +216,6 @@
                 doc['summary'].style.display = "none"
 
         doc['summary'].style.display = "none"
-        initializedata()
         handlequerystring()
         createquerystring()
         b_generate = html.BUTTON("Toggle Summary")

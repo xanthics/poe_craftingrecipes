@@ -13,16 +13,14 @@
     <script type="text/python" src="recipes.py"></script>
     <script type="text/python" src="lookup.py"></script>
     <section id="state" class="float">
-        <div id="togglesummary">
-        </div>
+        <div id="togglesummary"></div>
         <br>
         <div id="summary" class="showsummary" style="display: none;"></div>
     </section>
     <section id="main" class="main">
-        <div id="loading" style="display: none;">
+        <div id="loading">
             This page requires javascript in order to work correctly.
             <br>
-            <br> This page take a moment to load.
         </div>
 
         <h1>Prefix</h1>
@@ -3445,7 +3443,7 @@
                 </tr>
             </table>
         </div>
-        <button name="Prefix89">(-# - -#) to Total Mana Cost of Skills</button>
+        <button name="Prefix89">-# to Total Mana Cost of Skills</button>
         <br>
         <div id="Prefix89">
             <table class="body">
@@ -5306,12 +5304,12 @@
             <table class="body">
                 <tr id="tr1Suffix40" class="unchecked">
                     <td class="fixedcheck">
-                        <input type="checkbox" data-loc="of the Veil" data-slot="am,ri" data-rowid="tr1Suffix40" id="tcb1Suffix40">
+                        <input type="checkbox" data-loc="of the Veil, Item Level 75+" data-slot="am,ri" data-rowid="tr1Suffix40" id="tcb1Suffix40">
                     </td>
                     <td id="label1Suffix40">+1 to Minimum Endurance Charges</td>
                     <td class="fixedcost">1<span class="exalt"></span></td>
                     <td id="class1Suffix40" class="fixedclass"><span class="am"></span><span class="ri"></span></td>
-                    <td class="fixedloc">of the Veil</td>
+                    <td class="fixedloc">of the Veil, Item Level 75+</td>
                 </tr>
             </table>
         </div>
@@ -5321,12 +5319,12 @@
             <table class="body">
                 <tr id="tr1Suffix41" class="unchecked">
                     <td class="fixedcheck">
-                        <input type="checkbox" data-loc="of the Veil" data-slot="am,ri" data-rowid="tr1Suffix41" id="tcb1Suffix41">
+                        <input type="checkbox" data-loc="of the Veil, Item Level 75+" data-slot="am,ri" data-rowid="tr1Suffix41" id="tcb1Suffix41">
                     </td>
                     <td id="label1Suffix41">+1 to Minimum Power Charges</td>
                     <td class="fixedcost">1<span class="exalt"></span></td>
                     <td id="class1Suffix41" class="fixedclass"><span class="am"></span><span class="ri"></span></td>
-                    <td class="fixedloc">of the Veil</td>
+                    <td class="fixedloc">of the Veil, Item Level 75+</td>
                 </tr>
             </table>
         </div>
@@ -5336,12 +5334,12 @@
             <table class="body">
                 <tr id="tr1Suffix42" class="unchecked">
                     <td class="fixedcheck">
-                        <input type="checkbox" data-loc="of the Veil" data-slot="am,ri" data-rowid="tr1Suffix42" id="tcb1Suffix42">
+                        <input type="checkbox" data-loc="of the Veil, Item Level 75+" data-slot="am,ri" data-rowid="tr1Suffix42" id="tcb1Suffix42">
                     </td>
                     <td id="label1Suffix42">+1 to Minimum Frenzy Charges</td>
                     <td class="fixedcost">1<span class="exalt"></span></td>
                     <td id="class1Suffix42" class="fixedclass"><span class="am"></span><span class="ri"></span></td>
-                    <td class="fixedloc">of the Veil</td>
+                    <td class="fixedloc">of the Veil, Item Level 75+</td>
                 </tr>
             </table>
         </div>
@@ -7420,13 +7418,20 @@
                 </tr>
             </table>
         </div>
-
-		<script type="text/python">
+    </section>
+    <script type="text/python">
         from browser import document as doc
         from browser import html, window, bind
         from browser.html import TABLE, TR, TH, TD
         from recipes import mods
         from lookup import tobin, frombin
+
+        def initializedata():
+            for elt in doc.get(selector='input[data-loc="Default"]'):
+                elt.checked = True
+                doc[elt.attrs['data-rowid']].attrs['class'] = 'checked'
+            doc["loading"].style.display = "none"
+        initializedata()
 
         @bind('button[name]' ,'click')
         def togglemod(ev):
@@ -7569,14 +7574,9 @@
         b_generate = html.BUTTON("Toggle Summary")
         b_generate.bind("click", togglestate)
         doc["togglesummary"] <= b_generate
-        for elt in doc.get(selector='input[data-loc="Default"]'):
-            elt.checked = True
-            doc[elt.attrs['data-rowid']].attrs['class'] = 'checked'
 
 
     </script>
-
-	</section>
 
 </body>
 
