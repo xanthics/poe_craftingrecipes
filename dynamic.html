@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Path of Exile Crafting Recipe Tracker</title>
-    <script src="https://cdn.rawgit.com/brython-dev/brython/3.6.2/www/src/brython.js" type="text/javascript"></script>
-    <script src="https://cdn.rawgit.com/brython-dev/brython/3.6.2/www/src/brython_stdlib.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/brython-dev/brython/3.7.1/www/src/brython.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/brython-dev/brython/3.7.1/www/src/brython_stdlib.js" type="text/javascript"></script>
     <link href="css/layout.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -16,6 +16,7 @@
     <div id="summary" class="showsummary" style="display: none;"></div>
 </section>
 <section id="main" class="main">
+    Updated for 3.6.0
     <div id="loading">
         This page requires javascript in order to work correctly.
         <br><br>
@@ -176,11 +177,11 @@
                             line = a.split(' - ', 1)
                             table <= TR(TD(line[0].strip('Act ')) + TD(line[1]))
                     elif loc == 'map':
-                        table <= TH("Map Name")
                         table <= TH("Tier")
+                        table <= TH("Name")
                         for a in sorted(missing[loc]):
                             line = a.split(' - ', 1)
-                            table <= TR(TD(line[0]) + TD(line[1].strip("Tier ")))
+                            table <= TR(TD(line[0][5:]) + TD(line[1].strip("Tier ")))
                     elif loc == 'atzoatl':
                         table <= TH("Atzoatl")
                         for a in sorted(missing[loc]):
