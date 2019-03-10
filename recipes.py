@@ -503,7 +503,7 @@ mods = {
 				],
 			"You can apply an additional Curse":
 				[
-					[1, 'You can apply an additional Curse', '3<span class=\"exalt\"></span>', ['bd'], 'Veiled'],
+					[1, 'You can apply an additional Curse', '3<span class=\"exalt\"></span>', ['bd'], 'Veiled, Item Level 75+'],
 				],
 			"+# to Armour during Soul Gain Prevention":
 				[
@@ -937,15 +937,15 @@ mods = {
 				],
 			"+# to Minimum Endurance Charges":
 				[
-					[1, '+1 to Minimum Endurance Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil'],
+					[1, '+1 to Minimum Endurance Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil, Item Level 75+'],
 				],
 			"+# to Minimum Power Charges":
 				[
-					[1, '+1 to Minimum Power Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil'],
+					[1, '+1 to Minimum Power Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil, Item Level 75+'],
 				],
 			"+# to Minimum Frenzy Charges":
 				[
-					[1, '+1 to Minimum Frenzy Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil'],
+					[1, '+1 to Minimum Frenzy Charges', '1<span class=\"divine\"></span>', ['ri', 'am'], 'of the Veil, Item Level 75+'],
 				],
 			"#% increased Attack and Cast Speed":
 				[

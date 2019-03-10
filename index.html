@@ -2752,7 +2752,7 @@
                 <td id="label1Prefix75">You can apply an additional Curse</td>
                 <td class="fixedcost">3<span class="exalt"></span></td>
                 <td id="class1Prefix75" class="fixedclass"><span class="bd"></span></td>
-                <td class="fixedloc">Veiled</td>
+                <td class="fixedloc">Veiled, Item Level 75+</td>
             </tr>
         </table>
     </div>
@@ -4973,7 +4973,7 @@
                 <td id="label1Suffix40">+1 to Minimum Endurance Charges</td>
                 <td class="fixedcost">1<span class="divine"></span></td>
                 <td id="class1Suffix40" class="fixedclass"><span class="ri"></span><span class="am"></span></td>
-                <td class="fixedloc">of the Veil</td>
+                <td class="fixedloc">of the Veil, Item Level 75+</td>
             </tr>
         </table>
     </div>
@@ -4988,7 +4988,7 @@
                 <td id="label1Suffix41">+1 to Minimum Power Charges</td>
                 <td class="fixedcost">1<span class="divine"></span></td>
                 <td id="class1Suffix41" class="fixedclass"><span class="ri"></span><span class="am"></span></td>
-                <td class="fixedloc">of the Veil</td>
+                <td class="fixedloc">of the Veil, Item Level 75+</td>
             </tr>
         </table>
     </div>
@@ -5003,7 +5003,7 @@
                 <td id="label1Suffix42">+1 to Minimum Frenzy Charges</td>
                 <td class="fixedcost">1<span class="divine"></span></td>
                 <td id="class1Suffix42" class="fixedclass"><span class="ri"></span><span class="am"></span></td>
-                <td class="fixedloc">of the Veil</td>
+                <td class="fixedloc">of the Veil, Item Level 75+</td>
             </tr>
         </table>
     </div>
@@ -7063,11 +7063,11 @@
                             line = a.split(' - ', 1)
                             table <= TR(TD(line[0].strip('Act ')) + TD(line[1]))
                     elif loc == 'map':
-                        table <= TH("Map Name")
                         table <= TH("Tier")
+                        table <= TH("Name")
                         for a in sorted(missing[loc]):
                             line = a.split(' - ', 1)
-                            table <= TR(TD(line[0]) + TD(line[1].strip("Tier ")))
+                            table <= TR(TD(line[0][5:]) + TD(line[1].strip("Tier ")))
                     elif loc == 'atzoatl':
                         table <= TH("Atzoatl")
                         for a in sorted(missing[loc]):
