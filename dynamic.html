@@ -12,11 +12,11 @@
 <script type="text/python" src="recipes.py"></script>
 <script type="text/python" src="lookup.py"></script>
 <section id="state" class="float">
-    <div id="togglesummary"></div><br>
+    <div id="togglesummary"></div><br />
+    <a href="#Prefix">Prefixes</a> <a href="#Suffix">Suffixes</a> <a href="#Other">Sockets</a> Updated for 3.6.0<br />
     <div id="summary" class="showsummary" style="display: none;"></div>
 </section>
 <section id="main" class="main">
-    Updated for 3.6.0
     <div id="loading">
         This page requires javascript in order to work correctly.
         <br><br>
@@ -33,13 +33,15 @@
         def initializedata():
             for affix in mods:
                 # Header
-                doc["main"] <= html.H1(affix) + html.BR()
+                section = html.DIV(Class=f"{affix}")
+                doc["main"] <= section
+                section <= html.H1(affix, id=f"{affix}") + html.BR()
                 for c, mod in enumerate(mods[affix]):
-                    name = "{}{}".format(affix, c)
+                    name = f"{affix}{c}"
                     # Generate collapsable table
                     b_generate = html.BUTTON(mod, name=name)
-                    doc["main"] <= b_generate + html.BR()
-                    doc["main"] <= html.DIV(id=name)
+                    section <= b_generate + html.BR()
+                    section <= html.DIV(id=name)
                     table = TABLE(Class='body')
                     tabledata = {}
                     for stat in mods[affix][mod]:
@@ -49,9 +51,9 @@
                         if num not in tabledata:
                             tabledata[num] = {"label": label, "cost": cost, "slot": slot, "loc": loc}
                         else:
-                            tabledata[num]["label"] += "<br><br>{}".format(label)
+                            tabledata[num]["label"] += f"<br><br>{label}"
                             if cost not in tabledata[num]["cost"]:
-                                tabledata[num]["cost"] += "<br><br>{}".format(cost)
+                                tabledata[num]["cost"] += f"<br><br>{cost}"
                             if set(slot) - set(tabledata[num]["slot"]):
                                 tabledata[num]["slot"].append('<br><br>')
                                 tabledata[num]["slot"] += slot
@@ -66,19 +68,18 @@
                                     tslot += ','
                                 tslot += x
                         table <= TR(
-                                    #TD(html.INPUT(type="checkbox", data_name=mod, data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)), Class='fixedcheck') +
-                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid='tr{}{}'.format(r, name), id='tcb{}{}'.format(r, name)), Class='fixedcheck') +
-                                    TD(tr["label"], id='label{}{}'.format(r, name)) +
+                                    TD(html.INPUT(type="checkbox", data_loc=tr["loc"], data_slot=tslot, data_rowid=f'tr{r}{name}', id=f'tcb{r}{name}'), Class='fixedcheck') +
+                                    TD(tr["label"], id=f'label{r}{name}') +
                                     TD(tr["cost"], Class='fixedcost') +
-                                    TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id='class{}{}'.format(r, name), Class='fixedclass') +
+                                    TD([html.SPAN(Class=x) if x != '<br><br>' else html.BR()+html.BR() for x in tr['slot']], id=f'class{r}{name}', Class='fixedclass') +
                                     TD(tr["loc"], Class='fixedloc')
-                                    , id='tr{}{}'.format(r, name), Class="unchecked"
+                                    , id=f'tr{r}{name}', Class="unchecked"
                                     )
                     doc[name] <= table
-                    for elt in doc.get(selector='input[data-loc="Default"]'):
-                        elt.checked = True
-                        doc[elt.attrs['data-rowid']].attrs['class'] = 'checked'
-                    doc["loading"].style.display = "none"
+            for elt in doc.get(selector='input[data-loc="Default"]'):
+                elt.checked = True
+                doc[elt.attrs['data-rowid']].attrs['class'] = 'checked'
+            doc["loading"].style.display = "none"
         initializedata()
 
         @bind('button[name]' ,'click')
@@ -97,6 +98,7 @@
             if 'veil' in ev.target.attrs['data-loc'].lower():
                 doc[ev.target.attrs['data-rowid']].attrs['class']=newstate
             else:
+                # Doesn't function correctly as f-string
                 for elt in doc.get(selector='input[data-loc="{}"]'.format(ev.target.attrs['data-loc'])):
                     elt.checked = binstate
                     doc[elt.attrs['data-rowid']].attrs['class']=newstate
@@ -115,7 +117,7 @@
             for i in range(0, len(buf), 6):
                 buffer += frombin[''.join(buf[i:i+6])]
 
-            query = "?pl={}".format(buffer)
+            query = f"?pl={buffer}"
             window.history.replaceState('', '', query)
 
         def handlequerystring():
@@ -128,6 +130,8 @@
                         doc[elt.attrs['data-rowid']].attrs['class']='checked'
             except KeyError:
                 print("No query string given")
+            except IndexError:
+                print("Invalid query string given")
 
         def printmissing():
             doc['summary'].clear()
@@ -163,7 +167,7 @@
                                 if s not in missing['veil'][loc]:
                                     missing['veil'][loc].append(s)
                     else:
-                        print("Unknown location: {}".format(loc))
+                        print(f"Unknown location: {loc}")
 
 
             doc['summary'] <= html.STRONG("The following is a list of locations that have missing recipes.") + html.BR() + html.BR()
