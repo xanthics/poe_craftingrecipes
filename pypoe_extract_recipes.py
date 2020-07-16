@@ -30,6 +30,7 @@ def load_from_ggpk():
 				'groupid': i['CraftingBenchUnlockCategoriesKey'].rowid if i['CraftingBenchUnlockCategoriesKey'] is not None else i['RecipeIds'][0]['RecipeId'] if i['RecipeIds'] else 'default',
 				'type': i['AffixType']
 			}
+			temp['bases'].sort()
 			ret.append(temp)
 	ret = sorted(ret, key=operator.itemgetter('master', 'order', 'tier'))
 	return ret
